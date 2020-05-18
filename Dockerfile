@@ -9,4 +9,4 @@ RUN mkdir -pv /usr/app
 ENV PRISMA_CONFIG_PATH /usr/app/config.yml
 
 COPY ./config.tpl.yml /usr/app/
-RUN dockerize -template /usr/app/config.tpl.yml:/usr/app/config.yml
+ENTRYPOINT ["dockerize", "-template", "/usr/app/config.tpl.yml:/usr/app/config.yml", "/bin/sh", "-c", "/app/start.sh"]
