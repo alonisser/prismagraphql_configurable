@@ -11,3 +11,7 @@ Supported env vars:
 
 Basically we're inheriting from the [docker of the legacy 1.34](https://hub.docker.com/r/prismagraphql/prisma) branch and
 adding support for templating the configuration file 
+
+## Build
+
+Docker files are built according to tags in dockerhub
