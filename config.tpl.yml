@@ -1,4 +1,5 @@
 port: {{ .Env.PORT }}
+managementApiSecret: {{ .Env.MANAGEMENT_API_SECRET }}
 databases:
   default:
     migrations: true
